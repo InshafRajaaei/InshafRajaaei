@@ -2,10 +2,11 @@ import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-dark to-dark-light overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{background: 'linear-gradient(135deg, #0a0e27 0%, #1a0f2e 50%, #0a0e27 100%)'}}>
+      {/* Background Elements - Premium Glow */}
+      <div className="absolute top-20 right-0 w-96 h-96 bg-accent opacity-10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent opacity-8 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark/40"></div>
 
       <div className="section-container relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">

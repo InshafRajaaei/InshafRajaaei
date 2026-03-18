@@ -29,12 +29,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d97706;
+  background: #ff6b35;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #ff8c5a;
 }
 
 /* Animations */
@@ -62,10 +62,10 @@ body {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(217, 119, 6, 0.3);
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.4), 0 0 40px rgba(255, 107, 53, 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(217, 119, 6, 0.6);
+    box-shadow: 0 0 40px rgba(255, 107, 53, 0.8), 0 0 60px rgba(255, 107, 53, 0.4);
   }
 }
 
@@ -83,11 +83,21 @@ body {
 
 /* Buttons */
 .btn-primary {
-  @apply px-8 py-3 bg-accent hover:bg-accent-light text-dark font-bold rounded-lg transition-colors duration-300;
+  @apply px-8 py-3 bg-accent hover:bg-accent-light text-dark font-bold rounded-lg transition-all duration-300;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3), 0 0 20px rgba(255, 107, 53, 0.1);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4), 0 0 30px rgba(255, 107, 53, 0.2);
 }
 
 .btn-secondary {
   @apply px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-dark font-bold rounded-lg transition-all duration-300;
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.2), inset 0 0 10px rgba(255, 107, 53, 0.05);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.4), inset 0 0 15px rgba(255, 107, 53, 0.1);
 }
 
 /* Section Styles */
@@ -102,15 +112,21 @@ body {
 /* Cards */
 .card {
   @apply bg-dark-light border border-accent border-opacity-20 rounded-lg p-6 hover:border-opacity-60 transition-all duration-300;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .card-hover {
   @apply hover:shadow-lg hover:shadow-accent/20 hover:scale-105 transition-all duration-300;
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.08);
+}
+
+.card-hover:hover {
+  box-shadow: 0 20px 50px rgba(255, 107, 53, 0.15), 0 0 30px rgba(255, 107, 53, 0.1);
 }
 
 /* Text Effects */
 .gradient-text {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #ff8c5a, #ff6b35);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

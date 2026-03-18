@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github, ArrowRight } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-container bg-gradient-to-b from-dark to-dark-light">
+    <section id="contact" className="section-container relative overflow-hidden" style={{background: 'linear-gradient(135deg, #12172e 0%, #1a0f2e 100%)'}}>
       <h2 className="section-title">Let's Work Together</h2>
 
       <div className="max-w-2xl mx-auto text-center mb-12">

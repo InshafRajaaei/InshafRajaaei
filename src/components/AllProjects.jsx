@@ -16,12 +16,13 @@ export default function AllProjects() {
             style={{ animationDelay: `${index * 0.05}s` }}
           >
             {/* Project Image */}
-            <div className="mb-6 overflow-hidden rounded-lg h-48">
+            <div className="mb-6 overflow-hidden rounded-lg h-48 relative group/img">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity duration-500"></div>
             </div>
 
             {/* Featured Badge */}
