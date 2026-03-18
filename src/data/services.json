@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Full-Stack Web & Mobile Development",
+      "description": "Building responsive, scalable applications using React, Node.js, and Flutter. From concept to production, I deliver high-quality solutions with clean code and best practices.",
+      "icon": "Code",
+      "features": ["React & Vue.js", "Node.js & Express", "Flutter Apps", "Responsive Design", "Performance Optimization"]
+    },
+    {
+      "id": 2,
+      "title": "AI & Machine Learning Solutions",
+      "description": "Developing and integrating predictive models, computer vision systems, and data pipelines using Python, XGBoost, and YOLOv8.",
+      "icon": "Brain",
+      "features": ["Fraud Detection Models", "Computer Vision", "Data Pipeline Setup", "Model Training & Deployment", "Real-time Processing"]
+    },
+    {
+      "id": 3,
+      "title": "DevOps & Cloud Infrastructure",
+      "description": "Automating deployments and managing cloud environments with AWS, Docker, Jenkins, and Terraform. Ensuring reliability, scalability, and security.",
+      "icon": "Cloud",
+      "features": ["CI/CD Pipelines", "Docker & Kubernetes", "AWS Infrastructure", "Terraform IaC", "Monitoring & Logging"]
+    },
+    {
+      "id": 4,
+      "title": "QA Test Automation",
+      "description": "Creating robust testing frameworks using Selenium, Cucumber (BDD), and Postman to ensure software reliability and quality.",
+      "icon": "CheckCircle",
+      "features": ["Test Automation", "BDD Framework", "Selenium Testing", "API Testing", "Performance Testing"]
+    }
+  ]
+}

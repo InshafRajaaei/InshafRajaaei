@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "frontend": {
+      "category": "Frontend Development",
+      "skills": ["React.js", "JavaScript/ES6+", "TypeScript", "HTML5", "CSS3", "TailwindCSS", "Responsive Design"]
+    },
+    "backend": {
+      "category": "Backend Development",
+      "skills": ["Node.js", "Express.js", "Python", "FastAPI", "RESTful APIs", "GraphQL", "JWT Authentication"]
+    },
+    "mobile": {
+      "category": "Mobile Development",
+      "skills": ["Flutter", "Dart", "Firebase", "Stripe Integration", "State Management", "Provider"]
+    },
+    "ai_ml": {
+      "category": "AI & Machine Learning",
+      "skills": ["Python", "XGBoost", "YOLOv8", "OpenCV", "Computer Vision", "Feature Engineering", "Model Training"]
+    },
+    "devops": {
+      "category": "DevOps & Cloud",
+      "skills": ["AWS EC2", "Docker", "Kubernetes", "Jenkins", "Terraform", "CI/CD Pipelines", "Git"]
+    },
+    "qa": {
+      "category": "QA & Testing",
+      "skills": ["Selenium", "Cucumber", "BDD", "Postman", "Unit Testing", "Integration Testing", "Test Automation"]
+    },
+    "databases": {
+      "category": "Databases",
+      "skills": ["MongoDB", "PostgreSQL", "Firebase Firestore", "NoSQL", "SQL", "Database Design"]
+    },
+    "tools": {
+      "category": "Tools & Platforms",
+      "skills": ["Vite", "Git", "GitHub", "Figma", "VSCode", "Postman", "Linux/Ubuntu"]
+    }
+  }
+}
