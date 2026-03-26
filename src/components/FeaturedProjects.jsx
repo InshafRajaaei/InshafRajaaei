@@ -10,10 +10,10 @@ export default function FeaturedProjects({ onShowAll }) {
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-[#bbcabf] block mb-2">
+            <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-on-surface-variant block mb-2">
               Featured Work
             </span>
-            <h2 className="text-4xl font-bold tracking-tight text-white">Scalable Solutions</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-on-surface">Scalable Solutions</h2>
           </div>
           <button 
             onClick={onShowAll}
@@ -37,12 +37,12 @@ export default function FeaturedProjects({ onShowAll }) {
                 <div className="relative z-10">
                   <div className="flex gap-3 mb-4 flex-wrap">
                     {mainProject.tech.slice(0, 3).map(tech => (
-                      <span key={tech} className="bg-surface-container-high border border-outline-variant/30 px-3 py-1 text-[10px] uppercase tracking-widest font-bold">
+                      <span key={tech} className="bg-surface-container-high border border-outline-variant/30 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-on-surface">
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-3xl font-bold mb-3 text-white">{mainProject.title}</h3>
+                  <h3 className="text-3xl font-bold mb-3 text-on-surface">{mainProject.title}</h3>
                   <p className="text-on-surface-variant max-w-lg mb-6 leading-relaxed line-clamp-2">
                     {mainProject.problem}
                   </p>
@@ -66,7 +66,7 @@ export default function FeaturedProjects({ onShowAll }) {
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">
                     {index === 0 ? 'database' : 'cloud_sync'}
                   </span>
-                  <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-on-surface">{project.title}</h3>
                   <p className="text-sm text-on-surface-variant line-clamp-3">
                     {project.problem}
                   </p>

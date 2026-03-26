@@ -3,10 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  /* Dark Mode (Default) */
   body {
     background-color: #131313;
     color: #e5e2e1;
     font-family: 'Inter', sans-serif;
+  }
+
+  /* Light Mode */
+  .light {
+    --background: #fafaf9;
+    --surface-container: #f3f3f2;
+    --surface-container-high: #ede9e6;
+    --surface-container-low: #fcfcfb;
+    --on-surface: #1c1b1b;
+    --on-surface-variant: #49454e;
+    --outline-variant: #cac4cf;
+    color-scheme: light;
+  }
+
+  .light body {
+    background-color: #fafaf9;
+    color: #1c1b1b;
   }
 }
 
@@ -22,4 +40,73 @@
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
+
+  /* Light mode utilities */
+  .light .bg-background {
+    @apply bg-[#fafaf9];
+  }
+  .light .bg-surface-container {
+    @apply bg-[#f3f3f2];
+  }
+  .light .bg-surface-container-high {
+    @apply bg-[#ede9e6];
+  }
+  .light .bg-surface-container-low {
+    @apply bg-[#fcfcfb];
+  }
+  .light .text-on-surface {
+    @apply text-[#1c1b1b];
+  }
+  .light .text-on-surface-variant {
+    @apply text-[#49454e];
+  }
+  .light .border-outline-variant {
+    @apply border-[#cac4cf];
+  }
+  .light .placeholder-on-surface-variant {
+    @apply placeholder-[#49454e]/50;
+  }
+  
+  /* Light mode input and form elements */
+  .light input,
+  .light textarea,
+  .light select {
+    @apply bg-[#f9f8f7] text-[#1c1b1b];
+  }
+
+  .light input::placeholder,
+  .light textarea::placeholder {
+    @apply text-[#49454e]/50;
+  }
+
+  .light input:focus,
+  .light textarea:focus,
+  .light select:focus {
+    @apply border-[#4edea3];
+    background-color: #ffffff;
+  }
+
+  /* Light mode navbar */
+  .light nav {
+    @apply bg-[#fafaf9]/70 border-b border-[#cac4cf]/20;
+  }
+
+  /* Light mode cards */
+  .light .bg-surface-container {
+    @apply bg-[#f3f3f2] border-[#cac4cf]/30;
+  }
+
+  /* Light mode hover states */
+  .light a:hover,
+  .light button:hover {
+    @apply transition-colors;
+  }
+  .light .bg-\[#131313\],
+  .light .bg-\[#131313\]\/70 {
+    @apply bg-[#fafaf9] bg-opacity-70;
+  }
+  .light .text-\[#bbcabf\] {
+    @apply text-[#49454e];
+  }
 }
+

@@ -28,10 +28,10 @@ export default function Skills() {
   return (
     <section id="skills" className="max-w-7xl mx-auto px-8 mb-32 pt-12 mt-[-4rem]">
       <div className="text-center mb-16">
-        <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-[#bbcabf] block mb-2">
+        <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-on-surface-variant block mb-2">
           The Architecture
         </span>
-        <h2 className="text-4xl font-bold tracking-tight text-white">Technical Authority</h2>
+        <h2 className="text-4xl font-bold tracking-tight text-on-surface">Technical Authority</h2>
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -40,7 +40,7 @@ export default function Skills() {
             <span className="material-symbols-outlined text-primary text-3xl">
               {iconMap[key] || 'settings'}
             </span>
-            <span className="text-xs font-bold tracking-widest uppercase text-white">
+            <span className="text-xs font-bold tracking-widest uppercase text-on-surface">
               {labelMap[key] || key}
             </span>
             <p className="text-[10px] text-on-surface-variant">

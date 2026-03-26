@@ -8,7 +8,7 @@ export default function Hero() {
           <span className="label-md uppercase tracking-[0.2em] text-primary mb-6 block font-semibold">
             Available for specialized roles
           </span>
-          <h1 className="text-[3.5rem] md:text-[5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 text-white">
+          <h1 className="text-[3.5rem] md:text-[5rem] leading-[1.1] font-extrabold tracking-tighter mb-8 text-on-surface">
             Inshaf Rajaaei
           </h1>
           <p className="text-2xl md:text-3xl font-light text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
@@ -34,7 +34,7 @@ export default function Hero() {
             />
             <div className="absolute bottom-6 left-6 right-6 p-4 bg-surface/80 backdrop-blur-md border-l-4 border-primary">
               <p className="text-xs font-mono text-primary mb-1">CURRENT_STATUS</p>
-              <p className="text-sm font-medium text-white">Architecting distributed systems</p>
+              <p className="text-sm font-medium text-on-surface">Architecting distributed systems</p>
             </div>
           </div>
         </div>
