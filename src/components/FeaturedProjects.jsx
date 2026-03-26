@@ -1,87 +1,83 @@
-import { ExternalLink, Github } from 'lucide-react'
-import projects from '../data/projects.json'
+import projectsData from '../data/projects.json'
 
-export default function FeaturedProjects() {
-  const featuredProjects = projects.projects.filter(p => p.featured)
+export default function FeaturedProjects({ onShowAll }) {
+  const featured = projectsData.projects.filter(p => p.featured)
+  const mainProject = featured[0]
+  const sideProjects = featured.slice(1, 3)
 
   return (
-    <section id="projects" className="section-container">
-      <h2 className="section-title">Featured Projects</h2>
-
-      <div className="grid md:grid-cols-3 gap-8">
-        {featuredProjects.map((project, index) => (
-          <div
-            key={project.id}
-            className="card card-hover group"
-            style={{ animationDelay: `${index * 0.1}s` }}
+    <section id="projects" className="bg-surface-container-low py-24 mb-32">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div>
+            <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-[#bbcabf] block mb-2">
+              Featured Work
+            </span>
+            <h2 className="text-4xl font-bold tracking-tight text-white">Scalable Solutions</h2>
+          </div>
+          <button 
+            onClick={onShowAll}
+            className="text-primary font-bold hover:underline flex items-center gap-1 cursor-pointer"
           >
-            {/* Project Image */}
-            <div className="mb-6 overflow-hidden rounded-lg h-48 relative group/img">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity duration-500"></div>
-            </div>
+            View All Projects <span className="material-symbols-outlined">north_east</span>
+          </button>
+        </div>
 
-            {/* Content */}
-            <h3 className="text-xl font-bold mb-3 text-text-primary group-hover:text-accent transition-colors">
-              {project.title}
-            </h3>
-
-            <p className="text-text-secondary text-sm mb-4">
-              {project.problem}
-            </p>
-
-            {/* Tech Stack */}
-            <div className="mb-6">
-              <p className="text-xs font-bold text-accent mb-3">TECH STACK</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.slice(0, 4).map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-xs font-medium text-accent"
-                  >
-                    {tech}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          {/* Large Project Card */}
+          {mainProject && (
+            <div className="md:col-span-8 group cursor-pointer" onClick={() => window.open(mainProject.github, '_blank')}>
+              <div className="bg-surface-container h-[500px] relative overflow-hidden flex flex-col justify-end p-8 border border-outline-variant/20 rounded-sm">
+                <img 
+                  alt={mainProject.title} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" 
+                  src={mainProject.image} 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                <div className="relative z-10">
+                  <div className="flex gap-3 mb-4 flex-wrap">
+                    {mainProject.tech.slice(0, 3).map(tech => (
+                      <span key={tech} className="bg-surface-container-high border border-outline-variant/30 px-3 py-1 text-[10px] uppercase tracking-widest font-bold">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="text-3xl font-bold mb-3 text-white">{mainProject.title}</h3>
+                  <p className="text-on-surface-variant max-w-lg mb-6 leading-relaxed line-clamp-2">
+                    {mainProject.problem}
+                  </p>
+                  <span className="material-symbols-outlined text-primary text-3xl group-hover:translate-x-2 transition-transform">
+                    arrow_right_alt
                   </span>
-                ))}
-                {project.tech.length > 4 && (
-                  <span className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-xs font-medium text-accent">
-                    +{project.tech.length - 4}
-                  </span>
-                )}
+                </div>
               </div>
             </div>
+          )}
 
-            {/* Links */}
-            <div className="flex gap-4 pt-4 border-t border-accent border-opacity-20">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-accent/10 hover:bg-accent/20 rounded-lg text-accent transition-colors"
+          {/* Side Project Cards */}
+          <div className="md:col-span-4 flex flex-col gap-8">
+            {sideProjects.map((project, index) => (
+              <div 
+                key={project.id} 
+                className="bg-surface-container p-8 flex-1 border border-outline-variant/20 hover:bg-surface-bright/20 transition-colors group cursor-pointer rounded-sm"
+                onClick={() => window.open(project.github, '_blank')}
               >
-                <Github size={16} /> Code
-              </a>
-              {project.demo !== "Proprietary - Internal Enterprise Tool" && (
-                <a
-                  href="#"
-                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-accent/10 hover:bg-accent/20 rounded-lg text-accent transition-colors"
-                >
-                  <ExternalLink size={16} /> Demo
-                </a>
-              )}
-            </div>
+                <div className="mb-8">
+                  <span className="material-symbols-outlined text-primary text-4xl mb-4">
+                    {index === 0 ? 'database' : 'cloud_sync'}
+                  </span>
+                  <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                  <p className="text-sm text-on-surface-variant line-clamp-3">
+                    {project.problem}
+                  </p>
+                </div>
+                <span className="text-primary text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+                  Details <span className="material-symbols-outlined text-sm">open_in_new</span>
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
-      {/* View More Button */}
-      <div className="text-center mt-16">
-        <a href="#allprojects" className="btn-secondary inline-flex items-center gap-2">
-          View More Projects
-        </a>
+        </div>
       </div>
     </section>
   )

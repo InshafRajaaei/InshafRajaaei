@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "inverse-surface": "#e5e2da",
+                "surface-tint": "#98d1cc",
+                "on-tertiary-container": "#d99a7f",
+                "error-container": "#93000a",
+                "secondary-container": "#364b49",
+                "on-primary-fixed": "#00201e",
+                "on-error-container": "#ffdad6",
+                "on-secondary-container": "#a3bab7",
+                "on-primary-container": "#7bb3af",
+                "surface-variant": "#353530",
+                "on-primary-fixed-variant": "#104f4c",
+                "on-secondary-fixed": "#0a1f1d",
+                "outline-variant": "#404847",
+                "primary-fixed-dim": "#98d1cc",
+                "on-surface-variant": "#bfc8c7",
+                "primary": "#98d1cc",
+                "tertiary-fixed-dim": "#fab79a",
+                "error": "#ffb4ab",
+                "on-secondary": "#203432",
+                "surface-dim": "#14140f",
+                "surface-container-low": "#1c1c17",
+                "primary-container": "#004643",
+                "secondary-fixed": "#d0e7e4",
+                "outline": "#899391",
+                "secondary": "#b5cbc8",
+                "surface-container-highest": "#353530",
+                "on-background": "#e5e2da",
+                "on-tertiary": "#4e2511",
+                "tertiary-fixed": "#ffdbcc",
+                "on-tertiary-fixed": "#341102",
+                "primary-fixed": "#b4ede8",
+                "surface-container-high": "#2a2a25",
+                "tertiary-container": "#5e321d",
+                "on-surface": "#e5e2da",
+                "surface-container-lowest": "#0e0e0a",
+                "inverse-on-surface": "#31312b",
+                "surface-bright": "#3a3934",
+                "surface-container": "#20201b",
+                "inverse-primary": "#2e6764",
+                "on-primary": "#003735",
+                "on-error": "#690005",
+                "tertiary": "#fab79a",
+                "secondary-fixed-dim": "#b5cbc8",
+                "on-secondary-fixed-variant": "#364b49",
+                "background": "#14140f",
+                "surface": "#14140f",
+                "on-tertiary-fixed-variant": "#693b25"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Manrope"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .architect-grid {
+            background-image: radial-gradient(circle at 1px 1px, #404847 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#F0EDE5] dark:bg-[#14140F]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-full mx-auto">
+<div class="text-xl font-black text-[#004643] dark:text-[#98D1CC] font-['Space_Grotesk'] uppercase tracking-tighter">
+                INSHAF.DEV
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#004643] dark:text-[#98D1CC] border-b-2 border-[#004643] dark:border-[#98D1CC] pb-1 font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm" href="#">Home</a>
+<a class="text-[#404847] dark:text-[#899391] hover:text-[#004643] dark:hover:text-[#98D1CC] font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm transition-colors duration-200" href="#">Projects</a>
+<a class="text-[#404847] dark:text-[#899391] hover:text-[#004643] dark:hover:text-[#98D1CC] font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm transition-colors duration-200" href="#">About</a>
+<a class="text-[#404847] dark:text-[#899391] hover:text-[#004643] dark:hover:text-[#98D1CC] font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm transition-colors duration-200" href="#">Services</a>
+<a class="text-[#404847] dark:text-[#899391] hover:text-[#004643] dark:hover:text-[#98D1CC] font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="p-2 hover:bg-[#E0DDD5] dark:hover:bg-[#2A2A25] transition-colors duration-200 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#004643] dark:text-[#98D1CC]" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</div>
+<div class="bg-[#E0DDD5] dark:bg-[#1C1C17] h-[1px] w-full"></div>
+</nav>
+<main class="pt-24 min-h-screen architect-grid">
+<!-- Hero Section -->
+<section class="px-8 md:px-12 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-8 lg:col-span-7">
+<div class="inline-flex items-center space-x-2 mb-6">
+<span class="h-[1px] w-8 bg-primary"></span>
+<span class="font-label text-sm uppercase tracking-[0.2em] text-outline">Software Architect</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                    I build <span class="text-primary italic">secure</span> and <span class="bg-primary-container px-2">scalable</span> web applications
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                    Engineering high-performance digital environments where structural integrity meets technical innovation. Dedicated to minimalist excellence.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 font-headline font-bold text-sm uppercase tracking-wider hover:bg-primary-fixed-dim active:scale-95 transition-all">
+                        View Projects
+                    </button>
+<button class="group relative flex items-center text-primary font-headline font-bold text-sm uppercase tracking-wider py-4">
+                        Contact Me
+                        <span class="absolute bottom-3 left-0 w-full h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+</button>
+</div>
+</div>
+<div class="md:col-span-4 lg:col-span-5 hidden md:block">
+<div class="aspect-square bg-surface-container-high relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<img alt="Technical Workspace" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="Modern minimalist developer workspace with structural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP2XfS3b9UBoXqyWlYleX7X9m5mHbqY9aRfCcMrcF8R3foIN5BT1qmMyhsPJbwHuJ3A2n0EuWIDAnt1eIbJOs1463mNnY9oqvu2Z7d2qYVIcCelw16QHRH2dK6rneGZG7tuHK-GgqT7XBNYgHHoWcdVBGEITTy637omcgrdjxjlAy9zk8z8ChauvsWhzjr-rwzY7FBH7XckdXsfGFIasgxf2Koly1mxP9TjVHOSmM348-oJgCTMZBwNtcxrqUs-6rV18dHjDG9SmA"/>
+<div class="absolute bottom-0 right-0 p-8">
+<span class="font-label text-xs text-outline rotate-90 block origin-right">v.2024.01</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Project (Bento/Asymmetric Layout) -->
+<section class="py-20 bg-surface-container-low">
+<div class="px-8 md:px-12">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tighter text-on-surface">Selected Works</h2>
+</div>
+<div class="hidden md:block">
+<span class="font-label text-sm text-outline">01 — 04 PROJECTS</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-px bg-outline-variant/20">
+<!-- Project Card 1 -->
+<div class="md:col-span-7 bg-surface-container-high p-8 md:p-12 hover:bg-surface-container-highest transition-colors group">
+<div class="flex justify-between items-start mb-12">
+<span class="font-label text-xs text-primary uppercase tracking-[0.3em]">FINTECH // ARCHITECTURE</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="north_east">north_east</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">NEO-STRUCT CORE</h3>
+<p class="font-body text-on-surface-variant max-w-md mb-12">
+                            A highly secure transaction engine built with micro-architectural precision and redundant scalability layers.
+                        </p>
+<div class="aspect-video bg-surface-container-lowest overflow-hidden">
+<img alt="Financial Dashboard UI" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract data visualization with high contrast UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt-rebJcRMNx_7vNzixqXUu2Ur8gZxxI1dzP46dOLf2Xm78BZix7tPUuXLf-tcM83mdtLj1gC-oQ1cR5K2kQobdPyijTIw6t7gtY6E65vCgc67SybOocg22d5DIZ6eMeZTGbd9TLx57e3mBo4YMoBxFdHcsp-NZ_s8nOGnSU1k3-64o9gmW44yjs4joHzrouej7KeYu-NnD6NVdOxhs_WINfadSJ9YRS7xhogY8erl_UDY-l4krHPHBxB-yVyRxUUSd9WeP5v62TA"/>
+</div>
+</div>
+<!-- Project Card 2 (Side Stack) -->
+<div class="md:col-span-5 grid grid-rows-2 gap-px bg-outline-variant/20">
+<div class="bg-surface-container p-8 hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline text-xl font-bold">CRYPTO-VAULT</h3>
+<span class="material-symbols-outlined text-outline" data-icon="terminal">terminal</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6">Encrypted storage solution for enterprise assets.</p>
+<div class="flex space-x-4">
+<span class="font-label text-[10px] text-outline uppercase border border-outline/20 px-2 py-1">React</span>
+<span class="font-label text-[10px] text-outline uppercase border border-outline/20 px-2 py-1">Rust</span>
+</div>
+</div>
+<div class="bg-surface-container p-8 hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline text-xl font-bold">AXIS CMS</h3>
+<span class="material-symbols-outlined text-outline" data-icon="layers">layers</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6">Headless content architecture for rapid deployment.</p>
+<div class="flex space-x-4">
+<span class="font-label text-[10px] text-outline uppercase border border-outline/20 px-2 py-1">Node.js</span>
+<span class="font-label text-[10px] text-outline uppercase border border-outline/20 px-2 py-1">GraphQL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Excellence Section -->
+<section class="px-8 md:px-12 py-32 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-headline text-lg font-bold mb-6 text-primary flex items-center space-x-3">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+<span>SECURITY FIRST</span>
+</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Building robust defensive layers into the very foundation of the application, ensuring data integrity at every architectural node.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-lg font-bold mb-6 text-primary flex items-center space-x-3">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+<span>PERFORMANCE</span>
+</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Optimization that goes beyond the surface. Every millisecond is an structural element to be refined and polished.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-lg font-bold mb-6 text-primary flex items-center space-x-3">
+<span class="material-symbols-outlined" data-icon="schema">schema</span>
+<span>SCALABILITY</span>
+</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Systems designed to expand without friction. Future-proof codebases that evolve as your requirements grow.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1C1C17] dark:bg-[#0A0A08] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-10 gap-4">
+<div class="text-lg font-bold text-[#F0EDE5] font-['Space_Grotesk']">
+                INSHAF.DEV
+            </div>
+<div class="text-[#F0EDE5] dark:text-[#98D1CC] font-['Manrope'] text-sm tracking-wide text-center">
+                © 2024 INSHAF.DEV | ARCHITECTURAL PRECISION
+            </div>
+<div class="flex items-center space-x-8">
+<a class="text-[#899391] hover:text-[#F0EDE5] transition-colors font-['Manrope'] text-sm active:translate-y-[-2px] transition-transform" href="#">Github</a>
+<a class="text-[#899391] hover:text-[#F0EDE5] transition-colors font-['Manrope'] text-sm active:translate-y-[-2px] transition-transform" href="#">LinkedIn</a>
+<a class="text-[#899391] hover:text-[#F0EDE5] transition-colors font-['Manrope'] text-sm active:translate-y-[-2px] transition-transform" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>

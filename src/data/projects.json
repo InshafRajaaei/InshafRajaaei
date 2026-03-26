@@ -5,44 +5,57 @@
       "title": "RYNZA E-Commerce Platform & CI/CD Pipeline",
       "problem": "Provides a scalable and secure online shopping experience while eliminating manual deployment bottlenecks through a fully automated 5-stage CI/CD cloud pipeline.",
       "role": "Full-Stack & DevOps Engineer - Built the MERN stack application, authored the Selenium/Cucumber test automation framework, and configured the Jenkins, Docker, and Terraform deployment pipeline to AWS.",
-      "tech": ["React.js", "Node.js", "MongoDB", "Express", "Jenkins", "Docker", "Terraform", "AWS EC2", "Selenium", "Cucumber"],
+      "tech": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "Jenkins",
+        "Docker",
+        "Terraform",
+        "AWS EC2",
+        "Selenium",
+        "Cucumber"
+      ],
       "github": "https://github.com/InshafRajaaei/user-centric-ecommerce-site",
       "demo": "Available upon request",
       "featured": true,
-      "image": "https://images.unsplash.com/photo-1460925895917-adf4e565db7d?w=800&h=500&fit=crop"
+      "image": "../public/rynza.png"
     },
     {
       "id": 2,
       "title": "AI-Powered Transaction Scrutinization Engine",
       "problem": "Detects fraudulent financial transactions in real-time by processing credit card data through a machine learning model with a scoring latency of under 20ms.",
       "role": "Backend & AI Engineer - Engineered the data features, trained the XGBoost fraud detection model, and built the highly secure FastAPI backend with JWT and Two-Factor Authentication.",
-      "tech": ["Python", "XGBoost", "FastAPI", "PostgreSQL", "React", "TailwindCSS"],
+      "tech": [
+        "Python",
+        "XGBoost",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TailwindCSS"
+      ],
       "github": "https://github.com/InshafRajaaei",
       "demo": "Proprietary - Internal Enterprise Tool",
       "featured": true,
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop"
+      "image": "../public/transection.png"
     },
     {
       "id": 3,
       "title": "NexCart Multi-Tenant Mobile E-Commerce App",
       "problem": "Enables multiple store administrators to manage their own separate retail storefronts, inventory, and customer bases within a single, unified mobile ecosystem.",
       "role": "Mobile App Developer - Built the separate Flutter applications for customers and store admins, integrated Firebase for real-time NoSQL data storage, and configured the Stripe payment gateway.",
-      "tech": ["Flutter", "Firebase", "Stripe", "Provider", "Dart"],
+      "tech": [
+        "Flutter",
+        "Firebase",
+        "Stripe",
+        "Provider",
+        "Dart"
+      ],
       "github": "https://github.com/InshafRajaaei",
       "demo": "Available upon request",
       "featured": true,
-      "image": "https://images.unsplash.com/photo-1512941691920-25bda36caf8f?w=800&h=500&fit=crop"
-    },
-    {
-      "id": 4,
-      "title": "Real-Time Vehicle Speed Detection & Tracking",
-      "problem": "Analyzes live traffic camera feeds to accurately track moving vehicles and calculate their physical speeds using computer vision and spatial homography matrices.",
-      "role": "Computer Vision Engineer - Developed the tracking pipeline, integrated the YOLOv8 neural network and DeepSORT algorithm, and performed spatial calculations to process feeds at 30+ FPS.",
-      "tech": ["Python", "YOLOv8", "DeepSORT", "OpenCV"],
-      "github": "https://github.com/InshafRajaaei",
-      "demo": "Demo video available upon request",
-      "featured": false,
-      "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=800&h=500&fit=crop"
+      "image": "../public/mobile.jpg"
     }
   ]
 }
