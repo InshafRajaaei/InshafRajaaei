@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Sun, Moon } from 'lucide-react'
+import profileImg from '/favicon.jpg'
 
 export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,8 +18,15 @@ export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-md border-b border-outline-variant/10 transition-colors duration-300">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
-        <a href="#hero" onClick={onNavClick} className="text-xl font-black tracking-tighter text-on-surface uppercase cursor-pointer">
-          INSHAF.DEV
+        <a href="#hero" onClick={onNavClick} className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
+          <img 
+            src={profileImg} 
+            alt="Inshaf Rajaaei" 
+            className="w-10 h-10 rounded-full border-2 border-primary object-cover"
+          />
+          <span className="text-lg font-black tracking-tighter text-on-surface uppercase">
+            INSHAF RAJAAEI
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
@@ -33,7 +41,7 @@ export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
           ))}
         </div>
         <div className="flex items-center gap-6">
-          {/* Theme Toggle Switch */}
+          {/* Theme Toggle Switch with Icons */}
           <label className="relative inline-flex items-center cursor-pointer">
             <input
               type="checkbox"
@@ -41,7 +49,14 @@ export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
               onChange={onThemeToggle}
               className="sr-only peer"
             />
-            <div className="w-12 h-6 bg-surface-container-high peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary border border-outline-variant/50 transition-colors"></div>
+            {/* Background toggle */}
+            <div className="relative w-16 h-8 bg-surface-container-high peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer-checked:bg-primary border border-outline-variant/50 transition-colors duration-300 flex items-center justify-between px-1.5 overflow-hidden">
+              <Sun size={16} className={`text-on-primary transition-opacity duration-300 ${!darkMode ? 'opacity-100' : 'opacity-0'}`} />
+              <Moon size={16} className={`text-white transition-opacity duration-300 ${darkMode ? 'opacity-100' : 'opacity-0'}`} />
+            </div>
+            
+            {/* Moving circle */}
+            <div className="absolute w-7 h-7 bg-white rounded-full transition-all duration-300 peer-checked:translate-x-8 top-0.5 left-0.5 pointer-events-none shadow-md"></div>
           </label>
           
           <a 

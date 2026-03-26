@@ -26,6 +26,11 @@
     background-color: #fafaf9;
     color: #1c1b1b;
   }
+
+  /* Favicon styling for rounded appearance */
+  link[rel*="icon"] {
+    border-radius: 50% !important;
+  }
 }
 
 @layer utilities {

@@ -20,22 +20,22 @@ export default function Contact() {
     setIsSubmitting(true)
     
     try {
-      // Send email via simple backend-less method using formspree
-      const formDataObj = new FormData()
-      formDataObj.append('name', formData.name)
-      formDataObj.append('email', formData.email)
-      formDataObj.append('subject', formData.subject)
-      formDataObj.append('message', formData.message)
+      // Create a FormData object with your access key and form data
+      const data = new FormData()
+      data.append('access_key', '5bf925d8-8d0e-4ca4-be03-4c7a7636bbbe')
+      data.append('name', formData.name)
+      data.append('email', formData.email)
+      data.append('subject', formData.subject)
+      data.append('message', formData.message)
 
-      const response = await fetch('https://formspree.io/f/mpwqqjpl', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formDataObj,
-        headers: {
-          'Accept': 'application/json'
-        }
+        body: data
       })
 
-      if (response.ok) {
+      const result = await response.json()
+
+      if (result.success) {
         setSubmitStatus('success')
         setFormData({ name: '', email: '', subject: '', message: '' })
         setTimeout(() => setSubmitStatus(null), 5000)
