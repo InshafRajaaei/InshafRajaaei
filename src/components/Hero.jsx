@@ -1,4 +1,5 @@
 import heroImg from '../data/hero.jpg'
+import { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -17,7 +18,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-6">
             <a href="#projects" className="primary-cta-gradient text-on-primary px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold shadow-2xl hover:brightness-110 transition-all flex items-center gap-2 rounded-sm">
               View Projects
-              <span className="material-symbols-outlined">arrow_forward</span>
+              <ArrowRight size={20} />
             </a>
             <a href="#contact" className="border border-outline/40 text-primary px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold hover:bg-primary/5 transition-all inline-flex items-center rounded-sm">
               Contact Me

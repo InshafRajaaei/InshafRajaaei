@@ -42,9 +42,6 @@
   .primary-cta-gradient {
     background: linear-gradient(135deg, #4edea3 0%, #10b981 100%);
   }
-  .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  }
 
   /* Light mode utilities */
   .light .bg-background {

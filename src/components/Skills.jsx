@@ -1,14 +1,15 @@
 import skillsData from '../data/skills.json'
+import { Monitor, Terminal, Smartphone, BrainCircuit, Cloud, Bug, Database, Wrench, Settings } from 'lucide-react'
 
 const iconMap = {
-  frontend: 'web',
-  backend: 'terminal',
-  mobile: 'phone_iphone',
-  ai_ml: 'psychology',
-  devops: 'cloud_done',
-  qa: 'bug_report',
-  databases: 'storage',
-  tools: 'build'
+  frontend: Monitor,
+  backend: Terminal,
+  mobile: Smartphone,
+  ai_ml: BrainCircuit,
+  devops: Cloud,
+  qa: Bug,
+  databases: Database,
+  tools: Wrench
 }
 
 const labelMap = {
@@ -37,9 +38,10 @@ export default function Skills() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {categories.map(([key, data]) => (
           <div key={key} className="bg-surface-container p-4 md:p-6 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/10 hover:border-primary/40 transition-all rounded-sm">
-            <span className="material-symbols-outlined text-primary text-3xl">
-              {iconMap[key] || 'settings'}
-            </span>
+            {(() => {
+              const Icon = iconMap[key] || Settings;
+              return <Icon size={36} className="text-primary" />;
+            })()}
             <span className="text-xs font-bold tracking-widest uppercase text-on-surface">
               {labelMap[key] || key}
             </span>

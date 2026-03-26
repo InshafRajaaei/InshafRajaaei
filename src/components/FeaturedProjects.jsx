@@ -1,4 +1,5 @@
 import projectsData from '../data/projects.json'
+import { ExternalLink, Database, Cloud, ArrowRight } from 'lucide-react'
 
 export default function FeaturedProjects({ onShowAll }) {
   const featured = projectsData.projects.filter(p => p.featured)
@@ -19,7 +20,7 @@ export default function FeaturedProjects({ onShowAll }) {
             onClick={onShowAll}
             className="text-primary font-bold hover:underline flex items-center gap-1 cursor-pointer"
           >
-            View All Projects <span className="material-symbols-outlined">north_east</span>
+            View All Projects <ExternalLink size={20} />
           </button>
         </div>
 
@@ -46,9 +47,7 @@ export default function FeaturedProjects({ onShowAll }) {
                   <p className="text-on-surface-variant max-w-lg mb-6 leading-relaxed line-clamp-2">
                     {mainProject.problem}
                   </p>
-                  <span className="material-symbols-outlined text-primary text-3xl group-hover:translate-x-2 transition-transform">
-                    arrow_right_alt
-                  </span>
+                  <ArrowRight size={32} className="text-primary group-hover:translate-x-2 transition-transform" />
                 </div>
               </div>
             </div>
@@ -63,16 +62,18 @@ export default function FeaturedProjects({ onShowAll }) {
                 onClick={() => window.open(project.github, '_blank')}
               >
                 <div className="mb-8">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-4">
-                    {index === 0 ? 'database' : 'cloud_sync'}
-                  </span>
+                  {index === 0 ? (
+                    <Database size={36} className="text-primary mb-4" />
+                  ) : (
+                    <Cloud size={36} className="text-primary mb-4" />
+                  )}
                   <h3 className="text-xl font-bold mb-2 text-on-surface">{project.title}</h3>
                   <p className="text-sm text-on-surface-variant line-clamp-3">
                     {project.problem}
                   </p>
                 </div>
                 <span className="text-primary text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                  Details <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  Details <ExternalLink size={14} />
                 </span>
               </div>
             ))}

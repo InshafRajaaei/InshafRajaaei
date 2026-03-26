@@ -1,10 +1,11 @@
 import servicesData from '../data/services.json'
+import { Terminal, BrainCircuit, Cloud, CheckCircle, Check, Settings } from 'lucide-react'
 
 const iconMap = {
-  Code: 'terminal',
-  Brain: 'psychology',
-  Cloud: 'cloud_sync',
-  CheckCircle: 'verified'
+  Code: Terminal,
+  Brain: BrainCircuit,
+  Cloud: Cloud,
+  CheckCircle: CheckCircle
 }
 
 export default function Services() {
@@ -21,9 +22,12 @@ export default function Services() {
         {servicesData.services.map((service) => (
           <div key={service.id} className="bg-surface-container p-6 md:p-8 border border-outline-variant/20 hover:border-primary/40 transition-all group rounded-sm">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-primary text-4xl bg-primary/10 p-3 rounded-lg">
-                {iconMap[service.icon] || 'miscellaneous_services'}
-              </span>
+              <div className="text-primary bg-primary/10 p-3 rounded-lg flex items-center justify-center">
+                {(() => {
+                  const Icon = iconMap[service.icon] || Settings;
+                  return <Icon size={36} />;
+                })()}
+              </div>
               <h3 className="text-2xl font-bold text-on-surface">{service.title}</h3>
             </div>
             <p className="text-on-surface-variant leading-relaxed mb-6">
@@ -32,7 +36,7 @@ export default function Services() {
             <ul className="space-y-2">
               {service.features.slice(0, 3).map((feature, index) => (
                 <li key={index} className="flex items-center gap-2 text-sm text-on-surface-variant">
-                  <span className="material-symbols-outlined text-primary text-sm">check</span>
+                  <Check size={16} className="text-primary flex-shrink-0" />
                   {feature}
                 </li>
               ))}

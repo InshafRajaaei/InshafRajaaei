@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Award } from 'lucide-react'
 import certificatesData from '../data/certificates.json'
 
 export default function Certificates() {
@@ -46,9 +46,7 @@ export default function Certificates() {
           >
             <div className="flex justify-between items-start mb-6">
               <div>
-                <span className="material-symbols-outlined text-primary text-4xl mb-4 block">
-                  workspace_premium
-                </span>
+                <Award size={40} className="text-primary mb-4 block" />
                 <h3 className="text-xl font-bold mb-2 text-on-surface group-hover:text-primary transition-colors">{cert.title}</h3>
                 <p className="text-on-surface-variant text-sm font-medium">{cert.issuer}</p>
               </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Mail, Phone, Send } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -69,7 +70,7 @@ export default function Contact() {
           
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+              <Mail size={24} className="text-primary" />
               <div>
                 <p className="text-sm text-on-surface-variant">Email</p>
                 <a href="mailto:inshafrmnaazir@gmail.com" className="text-on-surface font-semibold hover:text-primary transition-colors">
@@ -78,7 +79,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-primary text-2xl">phone</span>
+              <Phone size={24} className="text-primary" />
               <div>
                 <p className="text-sm text-on-surface-variant">Alternative</p>
                 <p className="text-on-surface font-semibold">
@@ -174,7 +175,7 @@ export default function Contact() {
               disabled={isSubmitting}
               className="w-full primary-cta-gradient text-on-primary px-8 py-4 text-lg font-bold hover:brightness-110 disabled:opacity-50 transition-all inline-flex items-center justify-center gap-2 rounded-sm"
             >
-              <span className="material-symbols-outlined">send</span>
+              <Send size={24} />
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
