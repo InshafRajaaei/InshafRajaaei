@@ -6,18 +6,18 @@ export default function AllProjects() {
 
   return (
     <section id="allprojects" className="bg-surface-container-low py-24 mb-32">
-      <div className="max-w-7xl mx-auto px-8">
-        <h2 className="text-4xl font-bold tracking-tight text-on-surface mb-16 text-center">All Projects</h2>
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-16 text-center">All Projects</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allProjects.map((project, index) => (
             <div
               key={project.id}
-              className="bg-surface-container p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-all group cursor-pointer rounded-sm"
+              className="bg-surface-container p-6 md:p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-all group cursor-pointer rounded-sm"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               {/* Project Image */}
-              <div className="mb-6 overflow-hidden rounded-sm h-48 relative group/img -mx-8 -mt-8">
+              <div className="mb-6 overflow-hidden rounded-sm h-48 relative group/img -mx-6 -mt-6 md:-mx-8 md:-mt-8">
                 <img
                   src={project.image}
                   alt={project.title}

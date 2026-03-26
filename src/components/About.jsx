@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-8 mb-20 pt-16">
+    <section id="about" className="max-w-7xl mx-auto px-4 md:px-8 mb-20 pt-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative">
           <div className="absolute -top-10 -left-10 w-40 h-40 border-t-2 border-l-2 border-primary/30 hidden lg:block"></div>
-          <p className="text-[1.75rem] font-bold leading-snug text-on-surface relative z-10">
+          <p className="text-xl md:text-[1.75rem] font-bold leading-snug text-on-surface relative z-10">
             "Engineering is more than writing code—it's about creating structural integrity in a digital landscape. I focus on building systems that don't just work, but scale and persist through failure."
           </p>
           <div className="mt-8 flex items-center gap-4">

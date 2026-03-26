@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full border-t border-outline-variant/20 bg-surface mt-24">
-      <div className="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-center py-12 px-4 md:px-8 max-w-7xl mx-auto gap-6">
         <div className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-on-surface-variant text-center md:text-left">
           © {new Date().getFullYear()} Inshaf Rajaaei. Built for Scalability.
         </div>

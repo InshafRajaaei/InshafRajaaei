@@ -6,14 +6,14 @@ export default function AllCertificates() {
 
   return (
     <section id="allcertificates" className="bg-surface-container-low py-24 mb-32">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="text-4xl font-bold tracking-tight text-on-surface mb-16 text-center">All Certificates</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allCertificates.map((cert) => (
             <div 
               key={cert.id} 
-              className="bg-surface-container p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm"
+              className="bg-surface-container p-6 md:p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm"
               onClick={() => window.open(cert.url, '_blank')}
             >
               <div className="flex justify-between items-start mb-6">

@@ -24,7 +24,7 @@ export default function Certificates() {
   }
 
   return (
-    <section id="certificates" className="max-w-7xl mx-auto px-8 mb-32 pt-16">
+    <section id="certificates" className="max-w-7xl mx-auto px-4 md:px-8 mb-32 pt-16">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
         <div>
           <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-on-surface-variant block mb-2">
@@ -41,7 +41,7 @@ export default function Certificates() {
         {displayedCertificates.map((cert) => (
           <div 
             key={cert.id} 
-            className="bg-surface-container p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm"
+            className="bg-surface-container p-6 md:p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm"
             onClick={() => window.open(cert.url, '_blank')}
           >
             <div className="flex justify-between items-start mb-6">

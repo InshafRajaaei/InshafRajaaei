@@ -26,7 +26,7 @@ export default function Skills() {
   const categories = Object.entries(skillsData.skills);
 
   return (
-    <section id="skills" className="max-w-7xl mx-auto px-8 mb-32 pt-12 mt-[-4rem]">
+    <section id="skills" className="max-w-7xl mx-auto px-4 md:px-8 mb-32 pt-12 mt-[-4rem]">
       <div className="text-center mb-16">
         <span className="text-[0.75rem] uppercase tracking-[0.05em] font-['Inter'] text-on-surface-variant block mb-2">
           The Architecture
@@ -36,7 +36,7 @@ export default function Skills() {
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {categories.map(([key, data]) => (
-          <div key={key} className="bg-surface-container p-6 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/10 hover:border-primary/40 transition-all rounded-sm">
+          <div key={key} className="bg-surface-container p-4 md:p-6 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/10 hover:border-primary/40 transition-all rounded-sm">
             <span className="material-symbols-outlined text-primary text-3xl">
               {iconMap[key] || 'settings'}
             </span>

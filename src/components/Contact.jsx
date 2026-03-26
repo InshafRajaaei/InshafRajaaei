@@ -53,7 +53,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-8 mb-20 pt-16">
+    <section id="contact" className="max-w-7xl mx-auto px-4 md:px-8 mb-20 pt-16">
       <div className="grid md:grid-cols-2 gap-12">
         {/* Left Side - Info */}
         <div className="flex flex-col justify-center">
@@ -90,9 +90,9 @@ export default function Contact() {
         </div>
 
         {/* Right Side - Form */}
-        <div className="bg-surface-container p-8 border border-outline-variant/20 rounded-sm">
+        <div className="bg-surface-container p-6 md:p-8 border border-outline-variant/20 rounded-sm">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-bold text-on-surface-variant mb-2">
                   YOUR NAME

@@ -17,7 +17,7 @@ export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-md border-b border-outline-variant/10 transition-colors duration-300">
-      <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+      <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto w-full">
         <a href="#hero" onClick={onNavClick} className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
           <img 
             src={profileImg} 
