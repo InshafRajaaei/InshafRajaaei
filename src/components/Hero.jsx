@@ -1,3 +1,5 @@
+import heroImg from '../data/hero.jpg'
+
 export default function Hero() {
   return (
     <section id="hero" className="max-w-7xl mx-auto px-8 mb-32 pt-32 lg:pt-40">
@@ -27,8 +29,8 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary/10 opacity-20 group-hover:opacity-30 transition-opacity"></div>
             <img
               alt="Technical environment"
-              className="w-full h-full object-cover brightness-75 contrast-125"
-              src='../src/data/hero.jpg'
+              className="w-full h-full object-cover"
+              src={heroImg}
             />
             <div className="absolute bottom-6 left-6 right-6 p-4 bg-surface/80 backdrop-blur-md border-l-4 border-primary">
               <p className="text-xs font-mono text-primary mb-1">CURRENT_STATUS</p>

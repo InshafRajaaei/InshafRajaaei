@@ -20,7 +20,7 @@
       "github": "https://github.com/InshafRajaaei/user-centric-ecommerce-site",
       "demo": "Available upon request",
       "featured": true,
-      "image": "../public/rynza.png"
+      "image": "/rynza.png"
     },
     {
       "id": 2,
@@ -38,7 +38,7 @@
       "github": "https://github.com/InshafRajaaei",
       "demo": "Proprietary - Internal Enterprise Tool",
       "featured": true,
-      "image": "../public/transection.png"
+      "image": "/transection.png"
     },
     {
       "id": 3,
@@ -55,7 +55,7 @@
       "github": "https://github.com/InshafRajaaei",
       "demo": "Available upon request",
       "featured": true,
-      "image": "../public/mobile.jpg"
+      "image": "/mobile.jpg"
     }
   ]
 }
