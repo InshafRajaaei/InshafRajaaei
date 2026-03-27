@@ -6,7 +6,7 @@
 
 Building secure, scalable web applications for the modern infrastructure.
 
-[Portfolio](https://inshafrajaaei.vercel.app/) • [LinkedIn](www.linkedin.com/in/inshafrmnaazir) • [Twitter](https://x.com/InshafRajaaei) • [Contact Me](mailto:inshafrmnaazir@gmail.com)
+<a href="https://inshafrajaaei.vercel.app/" target="_blank">Portfolio</a> • <a href="https://www.linkedin.com/in/inshafrmnaazir" target="_blank">LinkedIn</a> • <a href="https://x.com/InshafRajaaei" target="_blank">Twitter</a> • <a href="mailto:inshafrmnaazir@gmail.com" target="_blank">Contact Me</a>
 
 </div>
 
@@ -39,7 +39,7 @@ I'm a passionate full-stack developer with expertise in building distributed sys
 
 ## 🏆 Highlighted Projects
 
-Check out my [portfolio](https://inshafrajaaei.vercel.app/) to see:
+Check out my <a href="https://inshafrajaaei.vercel.app/" target="_blank">portfolio</a> to see:
 - Featured projects with live demos
 - Case studies and problem-solving approaches
 - Technology implementations
@@ -65,10 +65,10 @@ I'm always interested in:
 - Mentoring junior developers
 
 **Feel free to reach out:**
-- 💼 [LinkedIn](www.linkedin.com/in/inshafrmnaazir)
-- 🐦 [Twitter](https://x.com/InshafRajaaei)
-- 📧 Email: [inshafrmnaazir@gmail.com](inshafrmnaazir@gmail.com)
-- 🌐 [Visit my portfolio](https://inshafrajaaei.vercel.app/)
+- 💼 <a href="https://www.linkedin.com/in/inshafrmnaazir" target="_blank">LinkedIn</a>
+- 🐦 <a href="https://x.com/InshafRajaaei" target="_blank">Twitter</a>
+- 📧 Email: <a href="mailto:inshafrmnaazir@gmail.com" target="_blank">inshafrmnaazir@gmail.com</a>
+- 🌐 <a href="https://inshafrajaaei.vercel.app/" target="_blank">Visit my portfolio</a>
 
 ---
 
@@ -106,9 +106,9 @@ I'm always interested in:
 
 ## ✨ Latest Articles & Insights
 
-- 🔗 [Building Scalable APIs with Node.js](#)
-- 🔗 [DevOps Best Practices for 2024](#)
-- 🔗 [Full-Stack Development with React & Python](#)
+- 🔗 <a href="#" target="_blank">Building Scalable APIs with Node.js</a>
+- 🔗 <a href="#" target="_blank">DevOps Best Practices for 2024</a>
+- 🔗 <a href="#" target="_blank">Full-Stack Development with React & Python</a>
 
 ---
 
