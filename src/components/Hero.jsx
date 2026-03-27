@@ -25,7 +25,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-4 hidden lg:block">
+        <div className="lg:col-span-4">
           <div className="relative aspect-square bg-surface-container-low rounded-lg overflow-hidden group">
             <div className="absolute inset-0 bg-primary/10 opacity-20 group-hover:opacity-30 transition-opacity"></div>
             <img
@@ -35,7 +35,7 @@ export default function Hero() {
             />
             <div className="absolute bottom-6 left-6 right-6 p-4 bg-surface/80 backdrop-blur-md border-l-4 border-primary">
               <p className="text-xs font-mono text-primary mb-1">CURRENT_STATUS</p>
-              <p className="text-sm font-medium text-on-surface">Architecting distributed systems</p>
+              <p className="text-sm font-medium text-black">Architecting distributed systems</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
-import profileImg from '/favicon.jpg'
+import profileImg from '../data/hero.jpg'
 
 export default function Navigation({ onNavClick, darkMode, onThemeToggle }) {
   const [isOpen, setIsOpen] = useState(false)
