@@ -74,9 +74,33 @@ I'm always interested in:
 
 ## 📊 GitHub Stats
 
-![Inshaf's GitHub stats](https://github-readme-stats.vercel.app/api?username=InshafRajaaei&show_icons=true&theme=dark)
+<div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=InshafRajaaei&layout=compact&theme=dark)
+### 🔥 GitHub Streak
+[![GitHub Streak](https://streak-stats.demolab.com?user=InshafRajaaei&theme=dark)](https://git.io/streak-stats)
+
+### 📈 Contribution Activity
+![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=InshafRajaaei&theme=dracula&hide_border=true)
+
+### 💻 Tech Performance
+<table>
+  <tr>
+    <td width="50%">
+      <b>📊 Statistics</b><br>
+      • <b>299</b> Total Contributions<br>
+      • <b>2</b> Day Current Streak<br>
+      • <b>7</b> Longest Streak
+    </td>
+    <td width="50%">
+      <b>🛠️ Top Technologies</b><br>
+      • JavaScript & TypeScript<br>
+      • React & Node.js<br>
+      • Python & DevOps
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
