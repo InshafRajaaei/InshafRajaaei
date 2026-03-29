@@ -1,4 +1,4 @@
-import { ExternalLink, Award } from 'lucide-react'
+import { Award } from 'lucide-react'
 import certificatesData from '../data/certificates.json'
 
 export default function AllCertificates() {
@@ -11,18 +11,29 @@ export default function AllCertificates() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allCertificates.map((cert) => (
-            <div 
+            <button 
               key={cert.id} 
-              className="bg-surface-container p-6 md:p-8 flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm"
+              className="bg-surface-container overflow-hidden flex flex-col border border-outline-variant/20 hover:border-primary/50 transition-colors group cursor-pointer rounded-sm text-left"
               onClick={() => window.open(cert.url, '_blank')}
+              onKeyDown={(e) => e.key === 'Enter' && window.open(cert.url, '_blank')}
             >
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <Award size={40} className="text-primary mb-4 block" />
-                  <h3 className="text-xl font-bold mb-2 text-on-surface group-hover:text-primary transition-colors">{cert.title}</h3>
-                  <p className="text-on-surface-variant text-sm font-medium">{cert.issuer}</p>
+              {cert.image && (
+                <div className="w-full h-48 overflow-hidden bg-surface-container-high">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-              </div>
+              )}
+              <div className="p-6 md:p-8 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <Award size={40} className="text-primary mb-4 block" />
+                    <h3 className="text-xl font-bold mb-2 text-on-surface group-hover:text-primary transition-colors">{cert.title}</h3>
+                    <p className="text-on-surface-variant text-sm font-medium">{cert.issuer}</p>
+                  </div>
+                </div>
               
               <div className="mb-8 space-y-1">
                 <p className="text-xs text-on-surface-variant font-mono tracking-wider">
@@ -40,7 +51,8 @@ export default function AllCertificates() {
                   </span>
                 ))}
               </div>
-            </div>
+              </div>
+            </button>
           ))}
         </div>
       </div>

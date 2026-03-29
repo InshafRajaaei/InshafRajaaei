@@ -2,23 +2,21 @@
   "projects": [
     {
       "id": 1,
-      "title": "RYNZA E-Commerce Platform & CI/CD Pipeline",
-      "problem": "Provides a scalable and secure online shopping experience while eliminating manual deployment bottlenecks through a fully automated 5-stage CI/CD cloud pipeline.",
-      "role": "Full-Stack & DevOps Engineer - Built the MERN stack application, authored the Selenium/Cucumber test automation framework, and configured the Jenkins, Docker, and Terraform deployment pipeline to AWS.",
+      "title": "RYNZA Full-Stack E-Commerce Platform",
+      "problem": "Delivers a complete online retail solution featuring a responsive customer storefront, a dedicated admin management panel, and secure payment processing.",
+      "role": "Full-Stack Developer - Engineered the application from scratch using the MERN stack, implementing JWT authentication, integrating the Stripe payment gateway, and styling with Tailwind CSS.",
       "tech": [
-        "React.js",
+        "React",
         "Node.js",
-        "MongoDB",
         "Express",
-        "Jenkins",
-        "Docker",
-        "Terraform",
-        "AWS EC2",
-        "Selenium",
-        "Cucumber"
+        "MongoDB",
+        "Tailwind CSS",
+        "Stripe",
+        "Vite"
       ],
       "github": "https://github.com/InshafRajaaei/user-centric-ecommerce-site",
-      "demo": "Available upon request",
+      "demo": "https://user-centric-ecommerce-site.vercel.app/",
+      "linkedin": "https://www.linkedin.com/posts/inshafrmnaazir_reactjs-nodejs-mongodb-activity-7384684922214481920-HBgD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zUJMB_vxuYQ8-NhBqvrOEvUChgXMRwfk",
       "featured": true,
       "image": "/rynza.jpg"
     },
@@ -35,26 +33,50 @@
         "React",
         "TailwindCSS"
       ],
-      "github": "https://github.com/InshafRajaaei",
-      "demo": "Proprietary - Internal Enterprise Tool",
+      "github": "https://github.com/BeliveWave/AI_POWERED_TRANSACTION_SCRUTINIZATION_ENGINE",
       "featured": true,
       "image": "/transection.jpg"
     },
     {
       "id": 3,
+      "title": "RYNZA Full-Stack E-Commerce & DevOps Pipeline",
+      "problem": "Automates the end-to-end deployment of a three-tier MERN application, replacing manual server configuration with a fully hands-off Infrastructure as Code (IaC) and CI/CD workflow.",
+      "role": "DevOps & Full-Stack Developer - Developed the React storefront and Node.js API, containerized the services with Docker, and engineered a complete CI/CD pipeline using Jenkins, Terraform, and Ansible on AWS.",
+      "tech": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Docker",
+        "Jenkins",
+        "Terraform",
+        "Ansible",
+        "AWS (EC2)"
+      ],
+      "github": "https://github.com/InshafRajaaei/RYNZA-Ecommerce-DevOps",
+      "linkedin": "https://www.linkedin.com/posts/inshafrmnaazir_devops-jenkins-docker-ugcPost-7443550922548555776-fVZW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zUJMB_vxuYQ8-NhBqvrOEvUChgXMRwfk",
+      "featured": true,
+      "image": "/devops.png"
+    },
+    {
+      "id": 4,
       "title": "NexCart Multi-Tenant Mobile E-Commerce App",
       "problem": "Enables multiple store administrators to manage their own separate retail storefronts, inventory, and customer bases within a single, unified mobile ecosystem.",
       "role": "Mobile App Developer - Built the separate Flutter applications for customers and store admins, integrated Firebase for real-time NoSQL data storage, and configured the Stripe payment gateway.",
-      "tech": [
-        "Flutter",
-        "Firebase",
-        "Stripe",
-        "Provider",
-        "Dart"
-      ],
+      "tech": ["Flutter", "Firebase", "Stripe", "Provider", "Dart"],
       "github": "https://github.com/gtharukshan/NexCart-Ecommerce-App",
-      "featured": true,
+      "featured": false,
       "image": "/mobile.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Automated Parking System",
+      "problem": "An automated parking system simulation bridging digital theory and hardware execution, featuring real-time occupancy tracking, edge detection for signal debouncing, and dynamic available slot visualization.",
+      "role": "Hardware Designer - Engineered the system logic using Verilog, implementing Finite State Machines (FSMs) and counters, and validated precise timing and synchronization using Icarus Verilog and GTKWave.",
+      "tech": ["Verilog", "Icarus Verilog", "GTKWave", "Digital Design", "FSM"],
+      "github": "https://github.com/InshafRajaaei/Hardware_Description_Language",
+      "linkedin": "https://www.linkedin.com/posts/inshafrmnaazir_verilog-fpga-digitaldesign-activity-7420555946676068352-KK_g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4zUJMB_vxuYQ8-NhBqvrOEvUChgXMRwfk",
+      "featured": false,
+      "image": "/automated-parking.jpg"
     }
   ]
 }

@@ -2,24 +2,43 @@
   "certificates": [
     {
       "id": 1,
-      "title": "Hands On React JS From Beginner to Expert",
-      "issuer": "Udemy",
-      "issued": "Sep 2025",
-      "credentialId": "UC-7cdb608e-222a-40d3-9169-4725adb24af0",
+      "title": "Databricks Accredited Generative AI Fundamentals",
+      "issuer": "Databricks",
+      "issued": "Mar 2026",
+      "credentialId": "178059890",
+      "image": "/certificates/databricks-ai-certificate.jpg",
       "skills": [
-        "React.js",
-        "JavaScript",
-        "Front-End",
-        "Web Development"
+        "Generative AI",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Large Language Models (LLMs)",
+        "Databricks"
       ],
-      "url": "https://www.udemy.com/certificate/UC-7cdb608e-222a-40d3-9169-4725adb24af0/"
+      "url": "https://credentials.databricks.com/2c6730e0-1dcd-4760-b33f-5d1256cbed89"
     },
     {
       "id": 2,
+      "title": "Introduction to Artificial Intelligence",
+      "issuer": "Simplilearn",
+      "issued": "Mar 2026",
+      "credentialId": "10017130",
+      "image": "/certificates/simplilearn-ai-certificate.jpg",
+      "skills": [
+        "Artificial Intelligence",
+        "Machine Learning Workflows",
+        "Deep Learning (ANNs)",
+        "Model Evaluation Metrics",
+        "Data Transformation"
+      ],
+      "url": "https://simpli-web.app.link/e/gCzZIyBST1b"
+    },
+    {
+      "id": 3,
       "title": "Web design for beginners",
       "issuer": "University of Moratuwa",
       "issued": "Dec 2024",
       "credentialId": "SSP6ZV5fNS",
+      "image": "/certificates/web-design-certificate.jpg",
       "skills": [
         "HTML",
         "Cascading Style Sheets (CSS)",
@@ -30,19 +49,14 @@
       "url": "https://open.uom.lk/verify/SSP6ZV5fNS"
     },
     {
-      "id": 3,
-      "title": "Databricks Accredited Generative AI Fundamentals",
-      "issuer": "Databricks",
-      "issued": "Mar 2026",
-      "credentialId": "178059890",
-      "skills": [
-        "Generative AI",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Large Language Models (LLMs)",
-        "Databricks"
-      ],
-      "url": "https://credentials.databricks.com/2c6730e0-1dcd-4760-b33f-5d1256cbed89"
+      "id": 4,
+      "title": "Hands On React JS From Beginner to Expert",
+      "issuer": "Udemy",
+      "issued": "Sep 2025",
+      "credentialId": "UC-7cdb608e-222a-40d3-9169-4725adb24af0",
+      "image": "/certificates/react-js-certificate.jpg",
+      "skills": ["React.js", "JavaScript", "Front-End", "Web Development"],
+      "url": "https://www.udemy.com/certificate/UC-7cdb608e-222a-40d3-9169-4725adb24af0/"
     }
   ]
 }

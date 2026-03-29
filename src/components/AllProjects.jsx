@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, Linkedin } from 'lucide-react'
 import projects from '../data/projects.json'
 
 export default function AllProjects() {
@@ -63,20 +63,34 @@ export default function AllProjects() {
 
               {/* Links */}
               <div className="flex gap-3 pt-4 border-t border-primary/20 mt-auto">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-1 py-2 px-3 bg-primary/10 hover:bg-primary/20 rounded-sm text-primary text-sm transition-colors"
-                >
-                  <Github size={14} /> Code
-                </a>
-                {project.demo !== "Proprietary - Internal Enterprise Tool" && (
+                {project.github && (
                   <a
-                    href="#"
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1 py-2 px-3 bg-primary/10 hover:bg-primary/20 rounded-sm text-primary text-sm transition-colors"
+                  >
+                    <Github size={14} /> Code
+                  </a>
+                )}
+                {project.demo && project.demo !== "Proprietary - Internal Enterprise Tool" && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-1 py-2 px-3 bg-primary/10 hover:bg-primary/20 rounded-sm text-primary text-sm transition-colors"
                   >
                     <ExternalLink size={14} /> Demo
+                  </a>
+                )}
+                {project.linkedin && (
+                  <a
+                    href={project.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-1 py-2 px-3 bg-primary/10 hover:bg-primary/20 rounded-sm text-primary text-sm transition-colors"
+                  >
+                    <Linkedin size={14} /> LinkedIn
                   </a>
                 )}
               </div>

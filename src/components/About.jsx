@@ -16,10 +16,10 @@ export default function About() {
         <div className="space-y-6 lg:pl-8">
           <h2 className="text-3xl font-bold tracking-tight mb-4 text-on-surface">The Philosophy</h2>
           <p className="text-on-surface-variant leading-relaxed">
-            With over 8 years in full-stack development, I've pivoted my focus toward the backbone of modern web architecture. I specialize in bridging the gap between elegant user interfaces and robust, secure server-side logic.
+            As a Computer Engineering undergraduate, my focus is strictly on building production-ready Artificial Intelligence and scalable software systems. I specialize in bridging the gap between complex machine learning models and secure, cloud-deployed backends
           </p>
           <p className="text-on-surface-variant leading-relaxed">
-            Every project I undertake begins with a security-first audit and a horizontal scalability blueprint. Whether it's a fintech application requiring hardened authentication or a high-traffic e-commerce platform, the goal remains the same: uncompromising performance.
+            Every system I architect—from real-time fintech fraud detection to high-FPS computer vision pipelines—is built with low latency and horizontal scalability in mind. My goal is simple: transforming raw data into high-performance, real-world solutions.
           </p>
           <div className="pt-6">
             <a 
